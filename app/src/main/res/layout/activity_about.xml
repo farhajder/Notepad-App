@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/infobackground"
+    tools:context=".AboutActivity">
+
+    <TextView
+        android:id="@+id/aboutTitle"
+        android:layout_width="199dp"
+        android:layout_height="48dp"
+        android:background="#AEF8F7F7"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Multi-Notes"
+        android:textAlignment="center"
+        android:textColor="#0C0C0C"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.72" />
+
+    <TextView
+        android:id="@+id/aboutTitle2"
+        android:layout_width="363dp"
+        android:layout_height="53dp"
+        android:background="#AEF8F7F7"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="© 2019, Farhaj Hayder"
+        android:textAlignment="center"
+        android:textColor="#FC050505"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutTitle" />
+
+    <TextView
+        android:id="@+id/aboutVerTitle"
+        android:layout_width="144dp"
+        android:layout_height="35dp"
+        android:background="#AEF8F7F7"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Version 1.0"
+        android:textAlignment="center"
+        android:textColor="#0E0D0D"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

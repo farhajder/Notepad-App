@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/noteInfoLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/darker_gray">
+
+    <EditText
+        android:id="@+id/multiLineBox"
+        style="@android:style/Widget.Material.AutoCompleteTextView"
+        android:layout_width="384dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/darker_gray"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:orientation="vertical"
+        android:cursorVisible="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titlebox"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="Note-Text" />
+
+    <TextView
+        android:id="@+id/titlebox"
+        style="@android:style/Widget.AutoCompleteTextView"
+        android:layout_width="385dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@android:color/darker_gray"
+        android:cursorVisible="false"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Note-Title" />
+
+    <EditText
+        android:id="@+id/dateBox"
+        style="@android:style/Widget.AutoCompleteTextView"
+        android:layout_width="188dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="10dp"
+        android:background="@android:color/darker_gray"
+        android:ems="10"
+        android:inputType="date"
+        android:cursorVisible="false"
+        app:layout_constraintBottom_toTopOf="@+id/multiLineBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titlebox"
+        app:layout_constraintVertical_bias="0.526" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
